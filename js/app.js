@@ -44,5 +44,3 @@ function startTimer() {
 function stopTimer() {
     clearInterval(intervalId);
 }
-
-setTimeout(changeContent, 3000);

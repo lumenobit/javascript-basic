@@ -3,3 +3,5 @@ btnTimerStart.addEventListener('click', startTimer);
 
 let btnTimerStop = document.getElementById('btn-timer-stop');
 btnTimerStop.addEventListener('click', stopTimer);
+
+setTimeout(changeContent, 1000);

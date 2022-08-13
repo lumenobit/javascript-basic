@@ -1,3 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto+Slab:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: 'Roboto Slab', serif;
+}
+
+.h1 {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.h2 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.h3 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
 #main {
     color: #fff;
     background-color: #ff1342;
@@ -8,8 +46,18 @@
     background-color: #000;
 }
 
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
 .btn {
     padding: 8px 15px;
+    border: 0;
+    border-radius: 4px;
 }
 
 .btn-primary {
@@ -28,4 +76,105 @@
 
 .btn-danger:hover {
     background-color: #ff2942;
+}
+
+.btn-icon {
+    color: #000;
+    background: transparent;
+    border: 0;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.modal-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 200px;
+    width: 500px;
+    max-width: calc(100% - 40px);
+    background-color: #fff;
+    border-radius: 4px;
+    z-index: 1;
+    -webkit-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.7);
+    box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    color: #fff;
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 20px;
+}
+
+.modal-header h1 {
+    font-size: 20px;
+    margin: 0
+}
+
+.modal.hide {
+    display: none;
+}
+
+.modal .dismiss {
+    color: #fff;
+    background: transparent;
+    border: 0;
+}
+
+.modal .dismiss:hover {
+    color: #f7f7f7;
+}
+
+form label {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+form input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #000;
+    outline: 0;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 6px 2px;
+    font-size: 1.2em;
+}
+
+.form-control {
+    position: relative;
+}
+
+.form-control .btn-icon {
+    position: absolute;
+    top: 9px;
+    right: 0;
+    font-size: 1.2em;
 }
