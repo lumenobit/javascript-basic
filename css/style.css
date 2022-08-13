@@ -178,3 +178,13 @@ form input {
     right: 0;
     font-size: 1.2em;
 }
+
+.btn-social {
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.2s all ease;
+}
+
+.btn-social:hover {
+    transform: scale(1.5) rotate(-25deg);
+}
