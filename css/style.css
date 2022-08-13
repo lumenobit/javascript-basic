@@ -1,0 +1,31 @@
+#main {
+    color: #fff;
+    background-color: #ff1342;
+    padding: 30px;
+}
+
+#main.bg-dark {
+    background-color: #000;
+}
+
+.btn {
+    padding: 8px 15px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #3e13ff;
+}
+
+.btn-primary:hover {
+    background-color: #6442ff;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #ff132f;
+}
+
+.btn-danger:hover {
+    background-color: #ff2942;
+}
